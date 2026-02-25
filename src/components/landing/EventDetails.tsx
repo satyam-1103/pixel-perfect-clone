@@ -2,9 +2,9 @@ const EventDetails = () => {
   return (
     <section id="event-details" className="w-full px-6 md:px-10 py-20 md:py-28">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Event Details</h2>
+        <h2 className="font-display text-3xl md:text-4xl font-extrabold text-center mb-12">Event Details</h2>
 
-        <div className="bg-card rounded-3xl shadow-sm border border-border/50 p-8 md:p-12">
+        <div className="card-glass rounded-3xl shadow-sm border border-white/30 p-8 md:p-12">
           <div className="grid md:grid-cols-3 gap-8 mb-10">
             <div>
               <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Date</h3>
@@ -27,7 +27,7 @@ const EventDetails = () => {
             </div>
             <a
               href="#"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold rounded-full px-8 py-4 text-base hover:opacity-90 transition-opacity"
+              className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-8 py-4 text-base"
             >
               Book Now
             </a>
