@@ -39,7 +39,7 @@ const CurriculumSection = () => {
     <section className="w-full px-6 md:px-10 py-20 md:py-28">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">WHAT YOU'LL LEARN</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-3">WHAT YOU'LL LEARN</h2>
           <p className="text-muted-foreground">
             No fluff. No theory-heavy tech talk. Just practical systems.
           </p>
@@ -49,7 +49,7 @@ const CurriculumSection = () => {
           {modules.map((mod) => (
             <div
               key={mod.part}
-              className="bg-card rounded-2xl p-7 shadow-sm border border-border/50 flex flex-col"
+              className="card-glass rounded-2xl p-7 shadow-sm border border-white/30 flex flex-col"
             >
               <div className="flex items-center justify-between mb-5">
                 <span className="text-xs font-semibold text-muted-foreground tracking-wider uppercase">
@@ -61,7 +61,7 @@ const CurriculumSection = () => {
                   </span>
                 )}
               </div>
-              <h3 className="text-xl font-bold mb-5">{mod.title}</h3>
+              <h3 className="font-display text-xl font-bold mb-5">{mod.title}</h3>
               <ul className="space-y-3 flex-1">
                 {mod.items.map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -77,7 +77,7 @@ const CurriculumSection = () => {
         <div className="text-center mt-12">
           <a
             href="#event-details"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold rounded-full px-7 py-4 text-base hover:opacity-90 transition-opacity"
+            className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
           >
             Get The Roadmap for ₹25
           </a>

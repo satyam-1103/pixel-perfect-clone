@@ -13,7 +13,7 @@ const HeroSection = () => {
             <span className="text-sm font-medium">Limited Seats Available</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
             Learn AI Agents.
             <br />
             <span className="block">Turn Skills</span>
@@ -28,7 +28,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center gap-5">
             <a
               href="#event-details"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold rounded-full px-7 py-4 text-base hover:opacity-90 transition-opacity"
+              className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
             >
               Join Webinar (₹25)
               <ArrowRight className="w-4 h-4" />
@@ -44,20 +44,29 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right - mentor image */}
+        {/* Right - mentor image with rotating text */}
         <div className="flex-shrink-0 relative">
-          <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-card shadow-xl">
+          <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-card shadow-xl relative">
             <img
               src={mentorPhoto}
-              alt="Mentor"
+              alt="Priyank Singh - AI Agents Instructor"
               className="w-full h-full object-cover"
               loading="eager"
             />
+            {/* Rotating text around image */}
+            <svg className="absolute inset-0 w-full h-full animate-spin-slow pointer-events-none" viewBox="0 0 300 300">
+              <defs>
+                <path id="circlePath" d="M 150, 150 m -120, 0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
+              </defs>
+              <text fill="hsl(var(--foreground))" fontSize="12" fontWeight="700" letterSpacing="3">
+                <textPath href="#circlePath">LEARN AI AGENTS • AUTOMATE &amp; EARN •&nbsp;</textPath>
+              </text>
+            </svg>
           </div>
           {/* Instructor label */}
-          <div className="absolute bottom-4 right-0 md:-right-4 bg-card rounded-xl shadow-lg px-5 py-3">
+          <div className="absolute bottom-4 right-0 md:-right-4 bg-card rounded-xl shadow-lg px-5 py-3 backdrop-blur-sm border border-white/30">
             <p className="text-xs text-muted-foreground">Instructor</p>
-            <p className="font-bold text-sm">Your Name Here</p>
+            <p className="font-bold text-sm">Priyank Singh</p>
           </div>
         </div>
       </div>
