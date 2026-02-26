@@ -40,20 +40,13 @@ const CurriculumSection = () => {
   return (
     <section className="w-full px-6 md:px-10 py-20 bg-[#11361B] text-[#ABCFA8] rounded-t-[3rem] -mt-10 relative z-20 md:py-28">
       <div className="max-w-6xl mx-auto">
-<<<<<<< HEAD
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6">WHAT YOU'LL LEARN</h2>
           <p className="text-xl opacity-80">
-=======
-        <div className="text-center mb-14">
-          <h2 className="font-display text-3xl md:text-4xl font-extrabold mb-3">WHAT YOU'LL LEARN</h2>
-          <p className="text-muted-foreground">
->>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734
             No fluff. No theory-heavy tech talk. Just practical systems.
           </p>
         </div>
 
-<<<<<<< HEAD
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
 <div className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition">
@@ -95,44 +88,6 @@ const CurriculumSection = () => {
           <a className="inline-block bg-white text-[#11361B] px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition shadow-[0_0_40px_rgba(255,255,255,0.2)]" href="https://topmate.io/priyanksinghofficial/1940263/pay" target="_blank">
                     Get The Roadmap for ₹25 <i className="ph-bold ph-arrow-right ml-2"></i>
 </a>
-=======
-        <div className="grid md:grid-cols-3 gap-6">
-          {modules.map((mod) => (
-            <div
-              key={mod.part}
-              className="card-glass rounded-2xl p-7 shadow-sm border border-white/30 flex flex-col"
-            >
-              <div className="flex items-center justify-between mb-5">
-                <span className="text-xs font-semibold text-muted-foreground tracking-wider uppercase">
-                  {mod.part}
-                </span>
-                {mod.label && (
-                  <span className="text-[10px] font-bold tracking-wider uppercase bg-primary/10 text-primary rounded-full px-3 py-1">
-                    {mod.label}
-                  </span>
-                )}
-              </div>
-              <h3 className="font-display text-xl font-bold mb-5">{mod.title}</h3>
-              <ul className="space-y-3 flex-1">
-                {mod.items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-1.5 flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a
-            href="#event-details"
-            className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
-          >
-            Get The Roadmap for ₹25
-          </a>
->>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734
         </div>
       </div>
     </section>

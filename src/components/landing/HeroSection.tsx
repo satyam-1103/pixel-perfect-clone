@@ -12,22 +12,12 @@ const HeroSection = () => {
             <span className="mr-2">🔴</span> Limited Seats Available
              </div>
 
-<<<<<<< HEAD
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-8 hero-text opacity-1">
                     Learn AI Agents. <br/> Turn Skills Into Side Income
 </h1>
 <p className="text-lg md:text-xl font-medium max-w-md mb-8 leading-relaxed opacity-1 hero-subtext">
                     Learn to build AI Agents that replace manual effort and get paid for it. Turn skills into a future-proof side income.
                 </p>
-=======
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
-            Learn AI Agents.
-            <br />
-            <span className="block">Turn Skills</span>
-            <span className="block">Into Side</span>
-            <span className="block">Income</span>
-          </h1>
->>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734
 
           <div className="flex flex-col sm:flex-row hero-cta  items-center gap-4">
             <a
@@ -68,15 +58,9 @@ const HeroSection = () => {
             </svg>
           </div>
           {/* Instructor label */}
-<<<<<<< HEAD
           <div className="absolute -bottom-4 right-0 bg-white text-[#11361B] md:-right-4 bg-card rounded-xl border border-[#11361B]/10 transform rotate-3 hover:scale-105 transition duration-500 shadow-lg px-5 py-3">
             <p className="text-sm font-bold">Instructor</p>
             <p className="font-black text-xl">Priyank Singh</p>
-=======
-          <div className="absolute bottom-4 right-0 md:-right-4 bg-card rounded-xl shadow-lg px-5 py-3 backdrop-blur-sm border border-white/30">
-            <p className="text-xs text-muted-foreground">Instructor</p>
-            <p className="font-bold text-sm">Priyank Singh</p>
->>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734
           </div>
         </div>
       </div>
