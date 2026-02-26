@@ -1,4 +1,4 @@
-import mentorPhoto from "@/assets/mentor-photo.jpg";
+import mentorPhoto from "@/assets/priyankSingh.jpeg";
 
 const tags = ["Systems Architect", "AI Consultant", "B2B/B2C Scaling"];
 

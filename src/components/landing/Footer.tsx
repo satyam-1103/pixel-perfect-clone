@@ -1,6 +1,6 @@
 import { InstagramLogoIcon } from "@phosphor-icons/react";
 import { LinkIcon } from "@phosphor-icons/react/dist/icons/Link";
-import mentorPhoto from "@/assets/mentor-photo.jpg";
+import mentorPhoto from "@/assets/priyankSingh.jpeg";
 const Footer = () => {
   return (
     <footer className="bg-[#11361B] text-[#ABCFA8] py-16 px-6 mt-12 rounded-t-[3rem] text-center">

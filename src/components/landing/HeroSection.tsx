@@ -1,4 +1,4 @@
-import mentorPhoto from "@/assets/mentor-photo.jpg";
+import mentorPhoto from "@/assets/priyankSingh.jpeg";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
