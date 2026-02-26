@@ -47,15 +47,7 @@ const HeroSection = () => {
               className="w-full h-full object-cover"
               loading="eager"
             />
-            {/* Rotating text around image */}
-            <svg className="absolute inset-0 w-full h-full animate-spin-slow pointer-events-none" viewBox="0 0 300 300">
-              <defs>
-                <path id="circlePath" d="M 150, 150 m -120, 0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
-              </defs>
-              <text fill="hsl(var(--foreground))" fontSize="12" fontWeight="700" letterSpacing="3">
-                <textPath href="#circlePath">LEARN AI AGENTS • AUTOMATE &amp; EARN •&nbsp;</textPath>
-              </text>
-            </svg>
+            
           </div>
           {/* Instructor label */}
           <div className="absolute -bottom-4 right-0 bg-white text-[#11361B] md:-right-4 bg-card rounded-xl border border-[#11361B]/10 transform rotate-3 hover:scale-105 transition duration-500 shadow-lg px-5 py-3">
