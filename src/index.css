@@ -121,3 +121,66 @@
 .animate-pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
 }
+
+
+        :root {
+            /* Matcha/Green Palette extracted from Reference */
+            --color-bg: #ABCFA8; 
+            --color-bg-light: #E8F3E6;
+            --color-primary: #11361B;
+            --color-accent: #FFFFFF;
+            --color-highlight: #3D6A42;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-primary);
+            font-family: 'DM Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .display-font {
+            font-family: 'Syne', sans-serif;
+            letter-spacing: -0.03em;
+        }
+
+        .cta-button {
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(17, 54, 27, 0.2);
+        }
+
+        .card-glass {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-curved-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--color-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-primary);
+            border-radius: 4px;
+        }

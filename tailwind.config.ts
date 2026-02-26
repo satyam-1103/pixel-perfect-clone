@@ -7,7 +7,7 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "2.5rem",
       screens: {
         "2xl": "1400px",
       },
@@ -83,6 +83,10 @@ export default {
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "scroll": {
+          "0%": {transform: "translateX(0)"},
+          "100%": {transform: "translateX(-50%)"},
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },

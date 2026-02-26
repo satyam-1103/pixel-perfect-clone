@@ -25,7 +25,7 @@ const faqs = [
 
 const FaqSection = () => {
   return (
-    <section className="w-full px-6 md:px-10 py-20 md:py-28">
+    <section className="w-full px-6 md:px-10 py-20 md:py-28 bg-[#ABCFA8] relative z-10">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Is this for you?
@@ -36,7 +36,7 @@ const FaqSection = () => {
             <AccordionItem
               key={i}
               value={`faq-${i}`}
-              className="bg-card rounded-2xl border border-border/50 px-6 shadow-sm"
+              className="card-glass rounded-2xl border border-border/50 px-6 shadow-sm"
             >
               <AccordionTrigger className="text-base font-semibold hover:no-underline py-5">
                 {faq.question}

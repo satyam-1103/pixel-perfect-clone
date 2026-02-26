@@ -1,31 +1,62 @@
+import { ArrowUpRightIcon } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShow(window.scrollY > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full py-5 px-6 md:px-10 flex items-center justify-between">
-      <div className="font-extrabold text-sm tracking-wider uppercase border-2 border-foreground rounded-md px-3 py-1.5">
-        AI AGENTS
-      </div>
+    <>
+      {/* Bottom Sticky CTA */}
+      {show && (
+        <div className="fixed bottom-0 left-0 w-full z-50 p-4  md:hidden bg-[#ABCFA8] border-t border-[#11361B]/10 shadow-xl transition-transform duration-300 ">
+          <a
+            className="block w-full text-center bg-[#11361B] text-white py-3 rounded-full font-bold text-lg"
+            href="https://topmate.io/priyanksinghofficial/1940263/pay"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book Now - ₹25
+          </a>
+        </div>
+      )}
 
-      <div className="hidden md:flex items-center gap-3">
-        <span className="text-sm font-medium border border-foreground/30 rounded-full px-4 py-1.5">
-          Webinar
-        </span>
-        <span className="text-sm font-medium border border-foreground/30 rounded-full px-4 py-1.5">
-          Feb 10, 2026
-        </span>
-      </div>
+      {/* Navbar */}
+      <nav className="flex justify-between items-center py-6 px-6 md:px-12 max-w-7xl mx-auto absolute top-0 left-0 right-0 z-40">
+        <div className="text-xl font-bold tracking-tighter uppercase border-2 border-[#11361B] px-3 py-1 rounded-full">
+          AI Agents
+        </div>
 
-      <a
-        href="#event-details"
-        className="text-sm font-semibold flex items-center gap-1 hover:opacity-80 transition-opacity"
-      >
-        Secure Spot
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <line x1="7" y1="17" x2="17" y2="7" />
-          <polyline points="7 7 17 7 17 17" />
-        </svg>
-      </a>
-    </nav>
+        <div className="hidden md:flex gap-4">
+          <span className="bg-[#11361B]/10 px-4 py-2 rounded-full text-sm font-semibold">
+            Webinar
+          </span>
+          <span className="bg-[#11361B]/10 px-4 py-2 rounded-full text-sm font-semibold">
+            Feb 10, 2026
+          </span>
+        </div>
+
+        <a
+          className="hidden md:inline-flex items-center gap-2 font-bold hover:underline"
+          href="https://topmate.io/priyanksinghofficial/1940263/pay"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Secure Spot
+          <ArrowUpRightIcon size={32} weight="bold" />
+        </a>
+      </nav>
+    </>
   );
 };
+
 
 export default Navbar;

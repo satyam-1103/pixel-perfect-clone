@@ -3,29 +3,23 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="w-full px-6 md:px-10 pt-8 pb-16 md:pb-24">
+    <section className="w-full px-6 md:px-10 pt-28 pb-16 md:pb-24 bg-[#ABCFA8]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-6">
         {/* Left content */}
         <div className="flex-1 max-w-2xl">
           {/* Limited seats badge */}
-          <div className="inline-flex items-center gap-2 bg-foreground/5 border border-foreground/10 rounded-full px-4 py-1.5 mb-8">
-            <span className="w-2.5 h-2.5 rounded-full bg-destructive animate-pulse-dot" />
-            <span className="text-sm font-medium">Limited Seats Available</span>
-          </div>
+          <div className="inline-block bg-[#11361B] text-[#ABCFA8] px-4 py-1.5 rounded-full text-sm font-bold mb-6 animate-fade-in-up">
+            <span className="mr-2">🔴</span> Limited Seats Available
+             </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-6">
-            Learn AI Agents.
-            <br />
-            <span className="block">Turn Skills</span>
-            <span className="block">Into Side</span>
-            <span className="block">Income</span>
-          </h1>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-8 hero-text opacity-1">
+                    Learn AI Agents. <br/> Turn Skills Into Side Income
+</h1>
+<p className="text-lg md:text-xl font-medium max-w-md mb-8 leading-relaxed opacity-1 hero-subtext">
+                    Learn to build AI Agents that replace manual effort and get paid for it. Turn skills into a future-proof side income.
+                </p>
 
-          <p className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-md mb-8">
-            Learn to build AI Agents that replace manual effort and get paid for it. Turn skills into a future-proof side income.
-          </p>
-
-          <div className="flex flex-wrap items-center gap-5">
+          <div className="flex flex-col sm:flex-row hero-cta  items-center gap-4">
             <a
               href="#event-details"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold rounded-full px-7 py-4 text-base hover:opacity-90 transition-opacity"
@@ -35,11 +29,11 @@ const HeroSection = () => {
             </a>
 
             <div className="flex items-center gap-2">
-              <div className="flex items-center gap-1">
-                <span className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center text-xs font-bold">AI</span>
-                <span className="w-8 h-8 rounded-full bg-foreground/15 flex items-center justify-center text-xs font-bold">$$</span>
+              <div className="flex -space-x-3">
+                <span className="w-10 h-10 rounded-full bg-white border-2 border-[#ABCFA8] flex items-center justify-center text-xs font-bold z-10">AI</span>
+                <span className="w-10 h-10 rounded-full bg-[#11361B] border-2 border-[#ABCFA8]  flex items-center justify-center text-white text-xs font-bold z-20">$$</span>
               </div>
-              <span className="text-sm font-medium">Side Hustle Ready</span>
+              <span className="text-sm font-semibold">Side Hustle Ready</span>
             </div>
           </div>
         </div>
@@ -55,9 +49,9 @@ const HeroSection = () => {
             />
           </div>
           {/* Instructor label */}
-          <div className="absolute bottom-4 right-0 md:-right-4 bg-card rounded-xl shadow-lg px-5 py-3">
-            <p className="text-xs text-muted-foreground">Instructor</p>
-            <p className="font-bold text-sm">Your Name Here</p>
+          <div className="absolute -bottom-4 right-0 bg-white text-[#11361B] md:-right-4 bg-card rounded-xl border border-[#11361B]/10 transform rotate-3 hover:scale-105 transition duration-500 shadow-lg px-5 py-3">
+            <p className="text-sm font-bold">Instructor</p>
+            <p className="font-black text-xl">Priyank Singh</p>
           </div>
         </div>
       </div>
