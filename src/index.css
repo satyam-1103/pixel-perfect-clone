@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Syne:wght@700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 90 25% 83%;
-    --foreground: 152 45% 15%;
+    --background: 130 30% 73%;
+    --foreground: 152 52% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 152 45% 15%;
+    --card: 0 0% 100% / 0.4;
+    --card-foreground: 152 52% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 152 45% 15%;
+    --popover-foreground: 152 52% 15%;
 
-    --primary: 152 45% 15%;
-    --primary-foreground: 90 25% 95%;
+    --primary: 152 52% 15%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 90 20% 90%;
-    --secondary-foreground: 152 45% 15%;
+    --secondary: 120 20% 88%;
+    --secondary-foreground: 152 52% 15%;
 
-    --muted: 90 18% 78%;
+    --muted: 130 18% 68%;
     --muted-foreground: 152 25% 35%;
 
-    --accent: 90 30% 75%;
-    --accent-foreground: 152 45% 15%;
+    --accent: 130 30% 65%;
+    --accent-foreground: 152 52% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 90 15% 75%;
-    --input: 90 15% 75%;
-    --ring: 152 45% 15%;
+    --border: 130 15% 65%;
+    --input: 130 15% 65%;
+    --ring: 152 52% 15%;
 
     --radius: 0.75rem;
 
@@ -46,16 +46,16 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Custom tokens */
-    --hero-bg: 90 25% 83%;
-    --dark-green: 152 45% 15%;
-    --dark-green-lighter: 150 30% 25%;
-    --sage: 90 25% 83%;
-    --sage-light: 90 25% 90%;
-    --sage-dark: 90 20% 70%;
-    --marquee-bg: 152 45% 15%;
-    --marquee-fg: 90 25% 85%;
-    --card-shadow: 0 4px 24px -4px hsla(152, 45%, 15%, 0.08);
-    --cta-gradient: linear-gradient(135deg, hsl(152, 45%, 15%), hsl(150, 30%, 25%));
+    --hero-bg: 130 30% 73%;
+    --dark-green: 152 52% 15%;
+    --dark-green-lighter: 145 30% 25%;
+    --sage: 130 30% 73%;
+    --sage-light: 120 35% 90%;
+    --sage-dark: 130 20% 60%;
+    --marquee-bg: 152 52% 15%;
+    --marquee-fg: 130 30% 85%;
+    --card-shadow: 0 4px 24px -4px hsla(152, 52%, 15%, 0.08);
+    --cta-gradient: linear-gradient(135deg, hsl(152, 52%, 15%), hsl(145, 30%, 25%));
   }
 
   .dark {
@@ -87,8 +87,9 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
   html {
@@ -122,6 +123,7 @@
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
+<<<<<<< HEAD
 
         :root {
             /* Matcha/Green Palette extracted from Reference */
@@ -184,3 +186,43 @@
             background: var(--color-primary);
             border-radius: 4px;
         }
+=======
+/* Glass card style */
+.card-glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* CTA button hover */
+.cta-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(17, 54, 27, 0.2);
+}
+
+/* Slow spin for hero text */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+>>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734

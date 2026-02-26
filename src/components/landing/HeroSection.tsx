@@ -12,17 +12,27 @@ const HeroSection = () => {
             <span className="mr-2">🔴</span> Limited Seats Available
              </div>
 
+<<<<<<< HEAD
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-8 hero-text opacity-1">
                     Learn AI Agents. <br/> Turn Skills Into Side Income
 </h1>
 <p className="text-lg md:text-xl font-medium max-w-md mb-8 leading-relaxed opacity-1 hero-subtext">
                     Learn to build AI Agents that replace manual effort and get paid for it. Turn skills into a future-proof side income.
                 </p>
+=======
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
+            Learn AI Agents.
+            <br />
+            <span className="block">Turn Skills</span>
+            <span className="block">Into Side</span>
+            <span className="block">Income</span>
+          </h1>
+>>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734
 
           <div className="flex flex-col sm:flex-row hero-cta  items-center gap-4">
             <a
               href="#event-details"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold rounded-full px-7 py-4 text-base hover:opacity-90 transition-opacity"
+              className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
             >
               Join Webinar (₹25)
               <ArrowRight className="w-4 h-4" />
@@ -38,20 +48,35 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right - mentor image */}
+        {/* Right - mentor image with rotating text */}
         <div className="flex-shrink-0 relative">
-          <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-card shadow-xl">
+          <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-card shadow-xl relative">
             <img
               src={mentorPhoto}
-              alt="Mentor"
+              alt="Priyank Singh - AI Agents Instructor"
               className="w-full h-full object-cover"
               loading="eager"
             />
+            {/* Rotating text around image */}
+            <svg className="absolute inset-0 w-full h-full animate-spin-slow pointer-events-none" viewBox="0 0 300 300">
+              <defs>
+                <path id="circlePath" d="M 150, 150 m -120, 0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
+              </defs>
+              <text fill="hsl(var(--foreground))" fontSize="12" fontWeight="700" letterSpacing="3">
+                <textPath href="#circlePath">LEARN AI AGENTS • AUTOMATE &amp; EARN •&nbsp;</textPath>
+              </text>
+            </svg>
           </div>
           {/* Instructor label */}
+<<<<<<< HEAD
           <div className="absolute -bottom-4 right-0 bg-white text-[#11361B] md:-right-4 bg-card rounded-xl border border-[#11361B]/10 transform rotate-3 hover:scale-105 transition duration-500 shadow-lg px-5 py-3">
             <p className="text-sm font-bold">Instructor</p>
             <p className="font-black text-xl">Priyank Singh</p>
+=======
+          <div className="absolute bottom-4 right-0 md:-right-4 bg-card rounded-xl shadow-lg px-5 py-3 backdrop-blur-sm border border-white/30">
+            <p className="text-xs text-muted-foreground">Instructor</p>
+            <p className="font-bold text-sm">Priyank Singh</p>
+>>>>>>> 9e563541191026ff876f68a39b0d0aff40cb9734
           </div>
         </div>
       </div>
