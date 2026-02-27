@@ -34,7 +34,7 @@ const EventDetails = () => {
 <div className="mt-12 pt-12 border-t border-white/10 relative z-10">
 <div className="text-5xl font-black text-white mb-2">₹25</div>
 <p className="text-sm opacity-60 mb-6 uppercase tracking-widest">One-time investment</p>
-<a className=" inline-flex items-center gap-2 px-10 py-4 rounded-full text-lg font-bold bg-white text-[#11361B] hover:bg-green-300" href="https://topmate.io/priyanksinghofficial/1940263/pay" target="_blank">
+<a href="/payment" className=" inline-flex items-center gap-2 px-10 py-4 rounded-full text-lg font-bold bg-white text-[#11361B] hover:bg-green-300" target="_blank">
                     Book Now
                     <LightningIcon size={32} weight="bold" />
 </a>
