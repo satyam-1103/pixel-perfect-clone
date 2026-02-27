@@ -6,11 +6,20 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShow(window.scrollY > 500);
+      const isMobile = window.innerWidth < 768;
+      if(isMobile && window.scrollY > 500) {
+        setShow(true);
+      }else{
+        setShow(false);
+      }
+      // setShow(window.scrollY > 500);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll); // To handle screen resizing
+    return () => {window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    }
   }, []);
 
   return (
