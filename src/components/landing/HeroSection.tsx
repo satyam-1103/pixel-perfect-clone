@@ -1,5 +1,5 @@
 import mentorPhoto from "@/assets/priyankSingh.jpeg";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Link } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -20,13 +20,13 @@ const HeroSection = () => {
                 </p>
 
           <div className="flex flex-col sm:flex-row hero-cta  items-center gap-4">
-            <a
-              href="/payment"
-              className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
-            >
-              Join Webinar (₹25)
-              <ArrowRight className="w-4 h-4" />
-            </a>
+            <Link
+  to="/payment"
+  className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
+>
+  Join Webinar (₹25)
+  <ArrowRight className="w-4 h-4" />
+</Link>
 
             <div className="flex items-center gap-2">
               <div className="flex -space-x-3">

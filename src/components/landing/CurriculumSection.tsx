@@ -1,4 +1,5 @@
 import { CheckIcon } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const modules = [
   {
@@ -85,9 +86,13 @@ const CurriculumSection = () => {
 </div>
 
         <div className="text-center mt-16">
-          <a href="/payment" className="inline-block bg-white text-[#11361B] px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition shadow-[0_0_40px_rgba(255,255,255,0.2)]" target="_blank">
-                    Get The Roadmap for ₹25 <i className="ph-bold ph-arrow-right ml-2"></i>
-</a>
+          <Link
+  to="/payment"
+  className="inline-block bg-white text-[#11361B] px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition shadow-[0_0_40px_rgba(255,255,255,0.2)]"
+>
+  Get The Roadmap for ₹25 
+  <i className="ph-bold ph-arrow-right ml-2"></i>
+</Link>
         </div>
       </div>
     </section>

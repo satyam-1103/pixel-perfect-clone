@@ -1,5 +1,6 @@
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -27,14 +28,12 @@ const Navbar = () => {
       {/* Bottom Sticky CTA */}
       {show && (
         <div className="fixed bottom-0 left-0 w-full z-50 p-4  md:hidden bg-[#ABCFA8] border-t border-[#11361B]/10 shadow-xl transition-transform duration-300 ">
-          <a
-            className="block w-full text-center bg-[#11361B] text-white py-3 rounded-full font-bold text-lg"
-            href="/payment"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book Now - ₹25
-          </a>
+          <Link
+  to="/payment"
+  className="block w-full text-center bg-[#11361B] text-white py-3 rounded-full font-bold text-lg"
+>
+  Book Now - ₹25
+</Link>
         </div>
       )}
 

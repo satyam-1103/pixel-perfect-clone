@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { ArrowLeftIcon } from '@phosphor-icons/react';
 import mentorPhoto from "@/assets/priyankSingh.jpeg";
+import { Link } from 'react-router-dom';
 
 type FormDataState = {
   name: string;
@@ -145,9 +146,13 @@ function Payment() {
         <section className="w-full overflow-hidden rounded-[28px] bg-white shadow-[0_24px_56px_rgba(10,20,40,0.18)]">
           <header className="flex items-center justify-between border-b border-slate-200 px-5 py-4">
             <div className="flex items-center gap-2.5 font-medium">
-              <a href="/" type="button" className="text-xl" aria-label="Go back">
-                <ArrowLeftIcon weight="bold" />
-              </a>
+              <Link
+  to="/"
+  className="text-xl"
+  aria-label="Go back"
+>
+  <ArrowLeftIcon weight="bold" />
+</Link>
               <img
                 src={mentorPhoto}
                 alt="Priyank Singh"
