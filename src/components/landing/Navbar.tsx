@@ -52,15 +52,15 @@ const Navbar = () => {
           </span>
         </div>
 
-        <a
+        <Link
           className="hidden md:inline-flex items-center gap-2 font-bold hover:underline"
-          href="/payment"
+          to="/payment"
           target="_blank"
           rel="noopener noreferrer"
         >
           Secure Spot
           <ArrowUpRightIcon size={32} weight="bold" />
-        </a>
+        </Link>
       </nav>
     </>
   );
