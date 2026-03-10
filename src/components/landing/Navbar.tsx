@@ -29,7 +29,7 @@ const Navbar = () => {
       {show && (
         <div className="fixed bottom-0 left-0 w-full z-50 p-4  md:hidden bg-[#ABCFA8] border-t border-[#11361B]/10 shadow-xl transition-transform duration-300 ">
           <Link
-  to="/payment"
+  to="https://rzp.io/rzp/N9uZANru"
   className="block w-full text-center bg-[#11361B] text-white py-3 rounded-full font-bold text-lg"
 >
   Book Now - ₹25
@@ -54,7 +54,7 @@ const Navbar = () => {
 
         <Link
           className="hidden md:inline-flex items-center gap-2 font-bold hover:underline"
-          to="/payment"
+          to="https://rzp.io/rzp/N9uZANru"
           target="_blank"
           rel="noopener noreferrer"
         >

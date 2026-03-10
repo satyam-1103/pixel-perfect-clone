@@ -36,7 +36,7 @@ const EventDetails = () => {
 <div className="text-5xl font-black text-white mb-2">₹25</div>
 <p className="text-sm opacity-60 mb-6 uppercase tracking-widest">One-time investment</p>
 <Link
-  to="/payment"
+  to="https://rzp.io/rzp/N9uZANru"
   className="inline-flex items-center gap-2 px-10 py-4 rounded-full text-lg font-bold bg-white text-[#11361B] hover:bg-green-300"
 >
   Book Now

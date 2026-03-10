@@ -22,7 +22,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row hero-cta  items-center gap-4">
             <Link
-              to="/payment"
+              to="https://rzp.io/rzp/N9uZANru"
               className="cta-button inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-full px-7 py-4 text-base"
             >
               Join Webinar (₹25)

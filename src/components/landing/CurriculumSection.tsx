@@ -87,7 +87,7 @@ const CurriculumSection = () => {
 
         <div className="text-center mt-16">
           <Link
-  to="/payment"
+  to="https://rzp.io/rzp/N9uZANru"
   className="inline-block bg-white text-[#11361B] px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition shadow-[0_0_40px_rgba(255,255,255,0.2)]"
 >
   Get The Roadmap for ₹25 
