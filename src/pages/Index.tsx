@@ -7,6 +7,7 @@ import MentorSection from "@/components/landing/MentorSection";
 import EventDetails from "@/components/landing/EventDetails";
 import FaqSection from "@/components/landing/FaqSection";
 import Footer from "@/components/landing/Footer";
+import TestimonialSlider from "@/components/landing/Reviews";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <MentorSection />
       <EventDetails />
       <FaqSection />
+      <TestimonialSlider />
       <Footer />
     </div>
   );
