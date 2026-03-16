@@ -13,7 +13,7 @@ const Footer = () => {
 <a className="text-2xl hover:text-white transition transform hover:scale-110" href="https://www.instagram.com/priyanksinghofficial/" rel="noopener" target="_blank">
 <InstagramLogoIcon size={32} weight="bold" /> 
 </a>
-<a className="text-2xl hover:text-white transition transform hover:scale-110" href="https://topmate.io/priyanksinghofficial" rel="noopener" target="_blank">
+<a className="text-2xl hover:text-white transition transform hover:scale-110" >
 <LinkIcon size={32} weight="bold" />
 </a>
 </div>
