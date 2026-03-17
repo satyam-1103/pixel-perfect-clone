@@ -48,7 +48,7 @@ const Navbar = () => {
             Webinar
           </span>
           <span className="bg-[#11361B]/10 px-4 py-2 rounded-full text-sm font-semibold">
-            Feb 10, 2026
+            2nd April, 2026
           </span>
         </div>
 
