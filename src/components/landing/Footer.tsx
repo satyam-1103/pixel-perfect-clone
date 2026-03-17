@@ -14,6 +14,10 @@ const Footer = () => {
 <InstagramLogoIcon size={32} weight="bold" /> 
 </a>
 
+  <a className="text-2xl hover:text-white transition transform hover:scale-110" href="https://topmate.io/priyanksinghofficial" rel="noopener" target="_blank">
+<LinkIcon size={32} weight="bold" /> 
+</a>
+
 </div>
 <div className="border-t border-white/10 pt-8 text-sm opacity-40">
 <p>© 2025 Priyank Singh. All rights reserved.</p>
