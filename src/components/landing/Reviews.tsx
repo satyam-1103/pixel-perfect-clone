@@ -24,6 +24,41 @@ const testimonials: Testimonial[] = [
     role: "Product Manager",
     text: "One of the most practical AI sessions I’ve attended. Priyank breaks down complicated topics into simple frameworks and actionable steps. The way he explains AI for sales and marketing automation is truly impressive.",
   },
+  {
+    name: "Amit Verma",
+    role: "Business Analyst",
+    text: "What sets Priyank apart is his clarity and real-world approach. The session was not just theoretical but full of practical examples that I could relate to instantly. Highly recommended for anyone exploring AI in business.",
+  },
+  {
+    name: "Sneha Iyer",
+    role: "Growth Manager",
+    text: "I loved how Priyank simplified AI tools for marketing use cases. The strategies shared for lead generation and customer engagement were extremely actionable. It was a very high-value session.",
+  },
+  {
+    name: "Vikas Gupta",
+    role: "Sales Head",
+    text: "Priyank’s session helped me understand how AI can directly impact sales pipelines. The automation workflows he demonstrated were eye-opening. It has definitely changed the way I look at AI in sales.",
+  },
+  {
+    name: "Neha Singh",
+    role: "Digital Marketing Specialist",
+    text: "The best part about the session was how beginner-friendly yet powerful the content was. Priyank explained tools and concepts in a way that anyone can start implementing immediately.",
+  },
+  {
+    name: "Karan Malhotra",
+    role: "Entrepreneur",
+    text: "Priyank brings a unique blend of technical knowledge and business understanding. His examples were very relatable and helped me identify opportunities to integrate AI into my own business processes.",
+  },
+  {
+    name: "Pooja Nair",
+    role: "HR Manager",
+    text: "Even from a non-technical background, I was able to grasp AI concepts easily. Priyank’s teaching style is engaging and practical. The use cases around automation were particularly useful.",
+  },
+  {
+    name: "Arjun Patel",
+    role: "Operations Manager",
+    text: "This session completely changed my perspective on AI. Priyank showed how small implementations can lead to big efficiency gains. Very insightful and worth attending.",
+  },
 ];
 
 export default function TestimonialSlider() {
