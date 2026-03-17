@@ -15,7 +15,7 @@ const EventDetails = () => {
 <CalendarBlankIcon size={32} weight="bold" />
 </div>
 <h3 className="text-xl font-bold">Date</h3>
-<p className="opacity-70">February 10, 2026</p>
+<p className="opacity-70">2nd April, 2026</p>
 </div>
 <div className="flex flex-col items-center">
 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-3xl mb-4 text-green-300">
